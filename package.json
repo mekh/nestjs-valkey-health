@@ -1,0 +1,54 @@
+{
+  "name": "@toxicoder/nestjs-valkey-health",
+  "version": "0.0.1",
+  "description": "Valkey health-check module for NestJS",
+  "author": "toxicoder",
+  "main": "dist/index.js",
+  "license": "ISC",
+  "keywords": [
+    "valkey",
+    "redis",
+    "cache",
+    "health",
+    "healthcheck",
+    "health-check",
+    "nestjs"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "dependencies": {
+    "iovalkey": "^0.3.3"
+  },
+  "devDependencies": {
+    "@stylistic/eslint-plugin-ts": "^4.4.1",
+    "@types/node": "^24.0.7",
+    "@typescript-eslint/parser": "^8.35.0",
+    "dprint": "^0.50.0",
+    "eslint": "^9.30.0",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-import-x": "^4.16.1",
+    "globals": "^16.2.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.35.0"
+  },
+  "peerDependencies": {
+    "@nestjs/common": ">= 10.0.0",
+    "@nestjs/core": ">= 10.0.0",
+    "@nestjs/terminus": ">= 10.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mekh/nestjs-valkey-health.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mekh/nestjs-valkey-health/issues"
+  },
+  "homepage": "https://github.com/mekh/nestjs-valkey-health#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}
