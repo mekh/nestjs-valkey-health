@@ -43,7 +43,7 @@ export class ValkeyHealthIndicator {
 
     const startTime = Date.now();
 
-    const pingPromise = type === 'redis'
+    const pingPromise = type === 'single'
       ? this.checkSingle.bind(this, client)
       : this.checkCluster.bind(this, client);
 
